@@ -1,16 +1,16 @@
 from scrapting import CollectWeb
 
 
-def mostrarClubes():
+def run():
     while True:
         try:
             collect = CollectWeb(
                 'https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/')
-            collect.mostrarTitulo('tr', 'table__green')
+            collect.mostrarClubes('td', 'table__team')
             break
         except Exception as error:
             print(error)
             break
 
 
-mostrarClubes()
+run()
