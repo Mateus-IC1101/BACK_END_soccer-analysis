@@ -1,0 +1,22 @@
+Códigos de uso ou que podem/poderiam ser usados
+Códigos de observação
+
+---->
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
+
+---->
+
+***********
+
+---->
+source env/Scripts/activate
+deactivate
+
+export FLASK_APP=api.py
+flask run
+
+export FLASK_ENV=development
+flask run
+----->
